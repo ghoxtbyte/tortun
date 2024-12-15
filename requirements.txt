@@ -1,6 +1,9 @@
 # requirements.txt
 # System dependencies for Tor tunneling script
 
-# Install Tor service and iptables for firewall configuration and traffic routing
-apt update
-apt install tor iptables iptables-persistent
+# Install Tor service 
+tor 
+
+# Install iptables for firewall configuration and traffic routing
+iptables 
+iptables-persistent
