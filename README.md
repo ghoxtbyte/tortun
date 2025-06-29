@@ -1,8 +1,3 @@
-در ادامه، نسخه‌ی **کامل و نهایی‌شده‌ی README.md** برای ابزار تونل کردن ترافیک سیستم از طریق شبکه‌ی **Tor** آورده شده است. این فایل آماده‌ی کپی‌کردن در GitHub است و تمام پیش‌نیازها، مراحل نصب، پیکربندی، اجرا، و نکات ایمنی را پوشش می‌دهد:
-
----
-
-````markdown
 # Tor Tunneling Bash Script for Linux
 
 This script allows you to route all your system's traffic through the Tor network using `iptables`. It provides an interactive menu to easily toggle Tor tunneling on or off.
