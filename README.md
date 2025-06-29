@@ -1,15 +1,27 @@
 # Tor Tunneling Bash Script for Linux
 
-This script allows you to route all your system's traffic through the Tor network using **iptables**. You can easily toggle the connection on or off with a simple menu system.
+This script allows you to route all your system's traffic through the Tor network using `iptables`. It provides an interactive menu to easily toggle Tor tunneling on or off.
 
-## Prerequisites
+## ⚙️ Features
 
-Before running the script, you'll need to install the required system dependencies. These include **Tor** (to create the tunnel) and **iptables** (to manage firewall rules).
+- Full system traffic routing via Tor (TCP ports 80, 443, 53 and UDP port 53)
+- Transparent proxy setup using Tor's `TransPort` and `DNSPort`
+- Simple interactive CLI
+- Automatically adds/removes iptables rules
+- Useful for anonymity, security testing, or bypassing censorship
 
-### 1. Install Dependencies
+---
 
-You can install the necessary system dependencies using the following command:
+## 🧰 Prerequisites
+
+Make sure the following packages are installed:
+
+- **tor**
+- **iptables**
+- **systemd** (for managing Tor as a service)
+
+### 🔧 Install Requirements
 
 ```bash
 sudo apt update
-sudo apt install $(cat requirements.txt)
+sudo apt install tor iptables -y
